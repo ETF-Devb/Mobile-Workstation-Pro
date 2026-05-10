@@ -1,4 +1,4 @@
-# [ MOBILE_DESKTOP_PRO ] : Ubuntu on Android
+#  Ubuntu on Android
 
 <p align="center">
   <img src="https://img.shields.io/badge/Ubuntu-22.04_LTS-8A2BE2?style=for-the-badge&logo=ubuntu&logoColor=white" />
