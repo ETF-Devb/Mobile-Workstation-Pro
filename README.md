@@ -55,12 +55,23 @@ udroid install jammy:xfce4
 > [!IMPORTANT]
 > Ensure **Termux-X11** is running in the background before execution.
 
+#### A. Standard Launch (Automatic)
+
 ```bash
 # Start X-Server
 termux-x11 :1 -ac &
 
-# Login & Start Environment
+# Login & Auto-start Environment
 udroid login jammy:xfce4 -- service dbus start && export DISPLAY=:1 && startxfce4 &
+
+```
+
+#### B. Manual Start (Inside Ubuntu)
+
+If you are already logged in to Ubuntu (`root@localhost`), execute:
+
+```bash
+service dbus start && export DISPLAY=:1 && startxfce4
 
 ```
 
@@ -73,5 +84,7 @@ exit
 pkill -9 -u $(whoami)
 
 ```
-
 ---
+` باش الكود يبان نقي فـ GitHub.
+
+هاد النسخة هي "الأكثر اكتمالاً" دابا، فيها كاع الحالات الممكنة. 🚀💜
