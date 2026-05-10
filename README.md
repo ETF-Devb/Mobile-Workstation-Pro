@@ -37,3 +37,6 @@ Full guide to transforming an Android device into a functional **Ubuntu Linux** 
 ```bash
 pkg update && pkg upgrade -y
 termux-setup-storage
+
+#### 2. Deployment
+
