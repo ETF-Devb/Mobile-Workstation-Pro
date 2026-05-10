@@ -1,36 +1,46 @@
+
 <p align="center">
-  <img src="https://capsule-render.vercel.app/render?type=soft&color=auto&height=250&section=header&text=Mobile%20Desktop%20Pro&fontSize=70&animation=fadeIn&fontAlignY=38&desc=Advanced%20Ubuntu%20Workstation%20on%20Android&descAlignY=62&descSize=20" width="100%" />
+  <img src="https://capsule-render.vercel.app/render?type=kaka&color=8A2BE2&height=200&section=header&text=MOBILE%20DESKTOP%20PRO&fontSize=70&fontAlignY=35&animation=twinkling&desc=UBUNTU%20ON%20ANDROID%20-%20ENGINEERED%20BY%20ETF-DEVB&descAlignY=60&descSize=20" width="100%" />
+</p>
+
+# 🚀 Mobile Desktop Pro: Ubuntu on Android
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Ubuntu-22.04_LTS-8A2BE2?style=for-the-badge&logo=ubuntu&logoColor=white" />
+  <img src="https://img.shields.io/badge/Platform-Android_Termux-blue?style=for-the-badge&logo=android&logoColor=white" />
+  <img src="https://img.shields.io/badge/GUI-XFCE4-9400D3?style=for-the-badge&logo=xfce&logoColor=white" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=8A2BE2&center=true&vCenter=true&width=500&lines=Hardware+Acceleration;Ubuntu+22.04+LTS;XFCE4+Desktop+Environment;Crafted+by+ETF-Devb" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=8A2BE2&center=true&vCenter=true&width=600&lines=OPTIMIZED+HARDWARE+ACCELERATION;CLEAN+INSTALLATION+FLOW;VIRTUAL+DESKTOP+ENVIRONMENT;MOBILE+COMPUTING+REVOLUTION" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" />
-  <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
-  <img src="https://img.shields.io/badge/Termux-000000?style=for-the-badge&logo=termux&logoColor=white" />
-  <img src="https://img.shields.io/badge/GPU-Accelerated-blueviolet?style=for-the-badge&logo=nvidia&logoColor=white" />
+  <img src="https://images2.imgbox.com/22/46/JdJE2JMG_o.png" width="850" style="border: 3px solid #8A2BE2; border-radius: 15px;" />
 </p>
 
-<p align="center">
-  <img src="https://images2.imgbox.com/22/46/JdJE2JMG_o.png" width="900" style="border-radius: 15px; border: 2px solid #8A2BE2;" />
-</p>
+Full guide to transforming an Android device into a functional **Ubuntu Linux** workstation. Optimized for performance and hardware acceleration using Termux-X11.
 
 ---
 
-### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Package.png" width="35" /> [ >_ CORE_RESOURCES ]
-<p align="left">
-  <a href="https://github.com/ETF-Devb/Mobile-Workstation-Pro/releases/latest">
-    <img src="https://img.shields.io/badge/DOWNLOAD-OFFICIAL%20APKs-8A2BE2?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</p>
+### <img src="https://img.icons8.com/neon/96/purple/box.png" width="30"/> [ >_ CORE_RESOURCES ]
+<a href="https://github.com/ETF-Devb/Mobile-Workstation-Pro/releases/latest">
+  <img src="https://img.shields.io/badge/DOWNLOAD-OFFICIAL%20APKs-8A2BE2?style=for-the-badge&logo=github&logoColor=white" />
+</a>
 
-> **[ # ] Deployment Note:** Access the latest optimized binaries from the official release section above.
+> [ # ] Access the latest optimized binaries from the official release section above.
 
 ---
 
-### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gear.png" width="35" /> [ >_ INSTALLATION_FLOW ]
+### <img src="https://img.icons8.com/neon/96/purple/layers.png" width="30"/> [ #_ SYSTEM_STACK ]
+* **Engine:** Termux (Proot-distro)
+* **Distro:** Ubuntu Jammy (Udroid)
+* **DE:** XFCE4 (Hardware Accelerated)
+* **Display:** Termux-X11
+
+---
+
+### <img src="https://img.icons8.com/neon/96/purple/install.png" width="30"/> [ >_ INSTALLATION_FLOW ]
 
 #### 1. Environment Setup
 Initialize the Termux environment and grant necessary storage permissions.
@@ -100,7 +110,5 @@ Use this protocol to properly terminate all background processes and clear the d
 pkill -9 termux-x11 && pkill -9 Xxwayland
 
 ```
-
----
 
 ---
