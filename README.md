@@ -1,29 +1,36 @@
-
-
-# [ MOBILE_DESKTOP_PRO ] : Ubuntu on Android
-
 <p align="center">
-  <img src="https://img.shields.io/badge/Ubuntu-22.04_LTS-8A2BE2?style=for-the-badge&logo=ubuntu&logoColor=white" />
-  <img src="https://img.shields.io/badge/Platform-Android_Termux-blue?style=for-the-badge&logo=android&logoColor=white" />
-  <img src="https://img.shields.io/badge/GUI-XFCE4-9400D3?style=for-the-badge&logo=xfce&logoColor=white" />
+  <img src="https://capsule-render.vercel.app/render?type=soft&color=auto&height=250&section=header&text=Mobile%20Desktop%20Pro&fontSize=70&animation=fadeIn&fontAlignY=38&desc=Advanced%20Ubuntu%20Workstation%20on%20Android&descAlignY=62&descSize=20" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://images2.imgbox.com/22/46/JdJE2JMG_o.png" width="850" alt="Ubuntu on Android Preview" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=8A2BE2&center=true&vCenter=true&width=500&lines=Hardware+Acceleration;Ubuntu+22.04+LTS;XFCE4+Desktop+Environment;Crafted+by+ETF-Devb" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" />
+  <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
+  <img src="https://img.shields.io/badge/Termux-000000?style=for-the-badge&logo=termux&logoColor=white" />
+  <img src="https://img.shields.io/badge/GPU-Accelerated-blueviolet?style=for-the-badge&logo=nvidia&logoColor=white" />
+</p>
+
+<p align="center">
+  <img src="https://images2.imgbox.com/22/46/JdJE2JMG_o.png" width="900" style="border-radius: 15px; border: 2px solid #8A2BE2;" />
 </p>
 
 ---
 
-### [ >_ CORE_RESOURCES ]
-<a href="https://github.com/ETF-Devb/Mobile-Workstation-Pro/releases/latest">
-  <img src="https://img.shields.io/github/v/release/ETF-Devb/Mobile-Workstation-Pro?style=for-the-badge&color=8A2BE2&label=DOWNLOAD%20OFFICIAL%20APKs&logo=github" />
-</a>
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Package.png" width="35" /> [ >_ CORE_RESOURCES ]
+<p align="left">
+  <a href="https://github.com/ETF-Devb/Mobile-Workstation-Pro/releases/latest">
+    <img src="https://img.shields.io/badge/DOWNLOAD-OFFICIAL%20APKs-8A2BE2?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
 
-> [ # ] Access the latest optimized binaries from the official release section above.
+> **[ # ] Deployment Note:** Access the latest optimized binaries from the official release section above.
 
 ---
 
-### [ >_ INSTALLATION_FLOW ]
+### <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gear.png" width="35" /> [ >_ INSTALLATION_FLOW ]
 
 #### 1. Environment Setup
 Initialize the Termux environment and grant necessary storage permissions.
@@ -48,7 +55,7 @@ udroid install jammy:xfce4
 
 ---
 
-### [ !_ EXECUTION_PROTOCOL ]
+###  [ !_ EXECUTION_PROTOCOL ]
 
 > [!IMPORTANT]
 > To ensure stability and avoid "Command Not Found" errors, follow this manual execution flow.
@@ -84,7 +91,7 @@ service dbus start && export DISPLAY=:1 && startxfce4
 
 ---
 
-### [ X_ KILL_SWITCH ]
+###  [ X_ KILL_SWITCH ]
 
 Use this protocol to properly terminate all background processes and clear the display cache.
 
@@ -93,5 +100,7 @@ Use this protocol to properly terminate all background processes and clear the d
 pkill -9 termux-x11 && pkill -9 Xxwayland
 
 ```
+
+---
 
 ---
