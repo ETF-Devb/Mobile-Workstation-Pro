@@ -1,4 +1,6 @@
-# 🚀 Mobile Desktop Pro: Ubuntu on Android
+
+
+# [ 🚀 MOBILE_DESKTOP_PRO ] : Ubuntu on Android
 
 <p align="center">
   <img src="https://img.shields.io/badge/Ubuntu-22.04_LTS-8A2BE2?style=for-the-badge&logo=ubuntu&logoColor=white" />
@@ -7,14 +9,12 @@
 </p>
 
 <p align="center">
-  <img src="https://images2.imgbox.com/22/46/JdJE2JMG_o.png" width="600" alt="Ubuntu on Android Preview" />
+  <img src="https://images2.imgbox.com/22/46/JdJE2JMG_o.png" width="850" alt="Ubuntu on Android Preview" />
 </p>
-
-Full guide to transforming an Android device into a functional **Ubuntu Linux** workstation. Optimized for performance and hardware acceleration using Termux-X11.
 
 ---
 
-### [ >_ CORE_REQUIREMENTS ]
+### [ >_ CORE_RESOURCES ]
 <a href="https://github.com/ETF-Devb/Mobile-Workstation-Pro/releases/latest">
   <img src="https://img.shields.io/github/v/release/ETF-Devb/Mobile-Workstation-Pro?style=for-the-badge&color=8A2BE2&label=DOWNLOAD%20OFFICIAL%20APKs&logo=github" />
 </a>
@@ -23,27 +23,25 @@ Full guide to transforming an Android device into a functional **Ubuntu Linux** 
 
 ---
 
-### [ #_ SYSTEM_STACK ]
-* **Engine:** Termux (Proot-distro)
-* **Distro:** Ubuntu Jammy (Udroid)
-* **DE:** XFCE4 (Hardware Accelerated)
-* **Display:** Termux-X11
-
----
-
 ### [ >_ INSTALLATION_FLOW ]
 
-#### 1. Setup Environment
+#### 1. Environment Setup
+Initialize the Termux environment and grant necessary storage permissions.
 ```bash
 pkg update && pkg upgrade -y
 termux-setup-storage
 
 ```
 
-#### 2. Deployment
+#### 2. System Deployment
+
+Deploy the *Udroid* engine and install the *Ubuntu Jammy* filesystem with *XFCE4* desktop environment.
 
 ```bash
-curl -L -o install.sh [https://git.io/udroid-installer](https://git.io/udroid-installer) && bash install.sh
+# Fetch and run the official Udroid installer
+curl -L -o install.sh [https://raw.githubusercontent.com/udroid-rc/udroid-installer/main/install.sh](https://raw.githubusercontent.com/udroid-rc/udroid-installer/main/install.sh) && bash install.sh
+
+# Install the optimized Ubuntu distribution
 udroid install jammy:xfce4
 
 ```
@@ -53,22 +51,31 @@ udroid install jammy:xfce4
 ### [ !_ EXECUTION_PROTOCOL ]
 
 > [!IMPORTANT]
-> Ensure **Termux-X11** is running in the background before execution.
+> To ensure stability and avoid "Command Not Found" errors, follow this manual execution flow.
 
-#### A. Standard Launch (Automatic)
+#### Step 1: Initialize X-Server
+
+Start the display server in the background.
 
 ```bash
-# Start X-Server
 termux-x11 :1 -ac &
-
-# Login & Auto-start Environment
-udroid login jammy:xfce4 -- service dbus start && export DISPLAY=:1 && startxfce4 &
 
 ```
 
-#### B. Manual Start (Inside Ubuntu)
+*(Ensure the **Termux-X11 app** is opened in the background).*
 
-If you are already logged in to Ubuntu (`root@localhost`), execute:
+#### Step 2: System Login
+
+Enter the Ubuntu proot environment.
+
+```bash
+udroid login jammy:xfce4
+
+```
+
+#### Step 3: Launch Desktop Environment
+
+Once inside the Ubuntu shell (`root@localhost`), execute the following to start the GUI:
 
 ```bash
 service dbus start && export DISPLAY=:1 && startxfce4
@@ -79,10 +86,12 @@ service dbus start && export DISPLAY=:1 && startxfce4
 
 ### [ X_ KILL_SWITCH ]
 
+Use this protocol to properly terminate all background processes and clear the display cache.
+
 ```bash
-exit
-pkill -9 -u $(whoami)
+# Exit the Ubuntu session first, then run:
+pkill -9 termux-x11 && pkill -9 Xxwayland
 
 ```
----
 
+---
