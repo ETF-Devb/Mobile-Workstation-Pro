@@ -1,3 +1,10 @@
+نعم يا **أنس**، كولشي داكشي اللي عطيتك (من `Installation_Flow` حتى لـ `Deployment`) كيكون **داخل في نفس الملف** اللي هو `README.md`.
+
+الملف خاصو يكون كيشمل كاع المراحل: من التحميل، للتثبيت، حتى لطريقة التشغيل.
+
+إليك الكود كامل مجمّع بلا نقصان، باش ما تلفش. هادشي كامل كبي وباسطي (Copy/Paste) فدقة وحدة فملف الـ **README.md**:
+
+```markdown
 # 🚀 Mobile Desktop Pro: Ubuntu on Android
 
 <p align="center">
@@ -38,5 +45,53 @@ Full guide to transforming an Android device into a functional **Ubuntu Linux** 
 pkg update && pkg upgrade -y
 termux-setup-storage
 
+```
+
 #### 2. Deployment
+
+```bash
+curl -L -o install.sh [https://git.io/udroid-installer](https://git.io/udroid-installer) && bash install.sh
+udroid install jammy:xfce4
+
+```
+
+---
+
+### [ !_ EXECUTION_PROTOCOL ]
+
+> [!IMPORTANT]
+> Ensure **Termux-X11** is running in the background before execution.
+
+```bash
+# Start X-Server
+termux-x11 :1 -ac &
+
+# Login & Start Environment
+udroid login jammy:xfce4 -- service dbus start && export DISPLAY=:1 && startxfce4 &
+
+```
+
+---
+
+### [ X_ KILL_SWITCH ]
+
+```bash
+exit
+pkill -9 -u $(whoami)
+
+```
+
+---
+
+### 💡 علاش مجموعين فملف واحد؟
+
+المستخدم ملي كيدخل للمشروع، كيبغي يلقى "خريطة الطريق" كاملة قدام عينيه:
+
+1. كيشوف **الصورة** باش يفهم النتيجة.
+2. كيورك على **Download** باش ياخد الـ APKs.
+3. كيهبط نيشان لـ **Installation** باش يعرف الأوامر اللي غينسخ فـ Termux.
+4. وفالأخير كيشوف **Execution** باش يعرف كيفاش يلونصي الواجهة.
+
+هاد الترتيب هو اللي كيخلي المشروع ديالك يبان احترافي وسهل في الاستخدام. 🚀💜
+
 
